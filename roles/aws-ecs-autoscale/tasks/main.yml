@@ -5,6 +5,7 @@
 - name: "AWS | ECS | Provision the cluster"
   ecs_cluster:
     name: "{{ ecs_cluster_name }}"
+    region: "{{ my_region }}"
     state: present
 
 # Container Instances: Define a EC2 Launch Configuration to create EC2 instances that run the ECS agent, then ensure
